@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 100vh;
+    /* background-color: blueviolet; */
+}
+nav{
+    height: 10vh;
+    background-color: blue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav a{
+    font-size: 30px;
+    color: white;
+}
+.logo{
+    width: 25%;
+    font-size: 35px;
+    color: white;
+}
+.menu{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+main{
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.2)), url(images/Bangladesh.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+main h3{
+    font-size: 45px;
+}
+main h1{
+    font-weight: 60px;
+    margin: 10px 0px;
+}
+main p{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+main a{
+    color: white;
+    padding: 10px 20px;
+    background-color: rgb(92, 168, 180);
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+}
+.image-gallery{
+    height: 45vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+figure{
+    height: 250px;
+    width: 250px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 10px 10px 40px rgba(128, 128, 128, 0.8);
+}
+.img-box{
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+figure img{
+ width: 100%;
+ height: 100%;
+ transition: all 1s linear .5s;
+}
+figcaption{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    opacity: 0;
+    transition: all .5s linear .5s;
+}
+button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgba(158, 163, 163, 0.278);
+    border: 1px solid rgb(189, 189, 189);
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+}
+figure:hover figcaption{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+figure:hover .img-box img{
+    transform: scale(1.2);
+}
+footer{
+    height: 5vh;
+    /* background-color: rgb(29, 220, 39); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
